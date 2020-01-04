@@ -19,4 +19,6 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 
-Route::get('/SweetAlert/{alertType?}', 'SweetAlertDemo@index')->middleware('adminAuth');
+// Route::get('/SweetAlert/{alertType?}', 'SweetAlertDemo@index')->middleware('adminAuth');
+
+Route::get('/SweetAlert/{alertType?}', 'SweetAlertDemo@index');
